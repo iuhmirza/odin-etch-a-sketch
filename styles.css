@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    background-color: gainsboro;
+    justify-content: center;
+
+}
+
+.x {
+    flex-direction: column;
+}
+
+.y {
+    flex-direction: row;
+}
+
+.pixel {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}
+
+.pixel:hover {
+    background-color: black;
+}
+
+.painted {
+    background-color: black;
+}

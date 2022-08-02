@@ -23,7 +23,7 @@ function generateGrid() {
 
     const pixel = document.querySelectorAll('.pixel')
     pixel.forEach(item => {
-        item.addEventListener('click', () => {
+        item.addEventListener('mouseover', () => {
             item.classList.toggle('painted')
         })
     })

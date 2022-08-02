@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: gainsboro;
+    align-items: center;
 }
 
 .flex {
@@ -8,9 +10,7 @@ body {
 }
 
 .container {
-    background-color: gainsboro;
     justify-content: center;
-
 }
 
 .row {
@@ -23,8 +23,8 @@ body {
 
 .pixel {
     background-color: white;
-    height: 100px;
-    width: 100px;
+    height: 4px;
+    width: 4px;
 }
 
 .pixel:hover {

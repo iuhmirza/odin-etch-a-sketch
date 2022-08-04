@@ -1,8 +1,12 @@
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: gainsboro;
-    align-items: center;
+    background-color:antiquewhite;
+
 }
 
 .flex {
@@ -11,6 +15,7 @@ body {
 
 .container {
     justify-content: center;
+    border: 4px gainsboro solid;
 }
 
 .row {
@@ -19,6 +24,11 @@ body {
 
 .column {
     flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
 }
 
 .pixel {

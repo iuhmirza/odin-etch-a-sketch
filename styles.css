@@ -1,11 +1,8 @@
-html, body {
-    height: 100%;
-}
 
 body {
     margin: 0;
-    padding: 0;
-    background-color:antiquewhite;
+    padding: 8px;
+    background-color: #D7E6FA;
 
 }
 
@@ -15,7 +12,7 @@ body {
 
 .container {
     justify-content: center;
-    border: 4px gainsboro solid;
+    border: 9px #EBD7FA solid;
 }
 
 .row {
@@ -43,4 +40,24 @@ body {
 
 .painted {
     background-color: black;
+}
+
+.gap {
+    gap: 4px;
+}
+
+.button {
+    background-color: #EBD7FA;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.button:hover {
+    background-color: #FAD7F8;
+}
+
+.button:active {
+    background-color: #EBD7FA;
 }

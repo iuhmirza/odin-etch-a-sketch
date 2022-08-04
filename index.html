@@ -8,9 +8,14 @@
     <script src="scripts.js" defer></script>
     <title>Etch-a-Sketch</title>
 </head>
-<body class="flex column center">
+<body class="flex column center gap">
+    <div>
+        <button onclick="generateGrid(16)" class="button">S</button>
+        <button onclick="generateGrid(32)" class="button">M</button>
+        <button onclick="generateGrid(64)" class="button">L</button>
+        <button onclick="generateGrid(128)" class="button">XL</button>
+    </div>
     <div class="flex container row">
     </div>
-    <button onclick="generateGrid(parseInt(prompt('Enter the length of the sides of the grid: ')))">Grid Size?</button>
 </body>
 </html>

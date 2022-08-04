@@ -2,8 +2,8 @@ const container = document.querySelector('.container')
 
 function generateGrid() {
     gridSize = parseInt(prompt("Enter the length of the sides of the grid: "))
-    while ((typeof gridSize !== 'number') || (gridSize < 16) || (gridSize > 64)) {
-        gridSize = parseInt(prompt("Enter the length of the sides of the grid: Min = 16 and Max = 64"))
+    while ((typeof gridSize !== 'number') || (gridSize < 16) || (gridSize > 128)) {
+        gridSize = parseInt(prompt("Enter the length of the sides of the grid: Min = 16 and Max = 128"))
     }
 
     while(container.firstChild) {
@@ -24,7 +24,7 @@ function generateGrid() {
     const pixel = document.querySelectorAll('.pixel')
     pixel.forEach(item => {
         item.addEventListener('mouseover', () => {
-            item.classList.toggle('painted')
+            item.classList.add('painted')
         })
     })
     

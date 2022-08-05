@@ -9,7 +9,7 @@
     <title>Etch-a-Sketch</title>
 </head>
 <body class="flex column center gap">
-    <div class="flex column center gap">
+    <div class="flex column stretch gap">
         <div class = "flex">
             <button onclick="changeColor('black')" class="button black">B</button>
             <button onclick="changeColor('white')" class="button white">W</button>
@@ -21,11 +21,14 @@
             <button onclick="changeColor('indigo')" class="button indigo">I</button>
             <button onclick="changeColor('violet')" class="button violet">V</button>
         </div>
-        <div class = "flex">
-            <button onclick="generateGrid(16)" class="button">S</button>
-            <button onclick="generateGrid(32)" class="button">M</button>
-            <button onclick="generateGrid(64)" class="button">L</button>
-            <button onclick="generateGrid(128)" class="button">XL</button>
+        <div class = "flex space-between">
+            <div class = "flex">
+                <button onclick="generateGrid(16)" class="button">S</button>
+                <button onclick="generateGrid(32)" class="button">M</button>
+                <button onclick="generateGrid(64)" class="button">L</button>
+                <button onclick="generateGrid(128)" class="button">XL</button>
+            </div>
+            <div><button onclick="reset()" class="button">x</button></div>
         </div>
 
     </div>

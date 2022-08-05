@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 8px;
     background-color: #D7E6FA;
-
 }
 
 .flex {
@@ -13,6 +12,11 @@ body {
 .space-between {
     justify-content: space-between;
 }
+
+.stretch {
+    align-items: stretch;
+}
+
 .container {
     justify-content: center;
     border: 9px #EBD7FA solid;
@@ -32,14 +36,10 @@ body {
 }
 
 .pixel {
-    background-color: white;
     height: 4px;
     width: 4px;
 }
 
-.painted {
-    background-color: black;
-}
 
 .gap {
     gap: 4px;
@@ -51,7 +51,7 @@ body {
     color: white;
     font-weight: bold;
     font-size: large;
-    width: 4vw;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .button:hover {

@@ -11,7 +11,7 @@ function generateGrid(gridSize = 64) {
         columns.classList.add('flex', 'column')
         for(let j = 0; j < gridSize; j++) {
             let card = document.createElement('div')
-            card.classList.add('pixel')
+            card.classList.add('pixel', 'white')
             columns.appendChild(card)
         }
         container.appendChild(columns)
@@ -33,6 +33,13 @@ function changeColor(color) {
             item.className = 'pixel'
             item.classList.add(color)
         }, {once: true})
+    })
+}
+
+function reset(){
+    const pixel = document.querySelectorAll('.pixel')
+    pixel.forEach(item => {
+        item.className = 'pixel white'
     })
 }
 

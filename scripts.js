@@ -17,17 +17,23 @@ function generateGrid(gridSize = 64) {
         container.appendChild(columns)
     }
 
+
+    
+    
+}
+
+function changeColor(color) {
     const pixel = document.querySelectorAll('.pixel')
     pixel.forEach(item => {
         item.addEventListener('mouseover', () => {
-            item.classList.add('painted')
-        })
-        item.addEventListener('touchstart', () => {
-            item.classList.add('painted')
-        })
+            item.className = 'pixel'
+            item.classList.add(color)
+        }, {once: true})
+        item.addEventListener('touch', () => {
+            item.className = 'pixel'
+            item.classList.add(color)
+        }, {once: true})
     })
-    
-    
 }
 
 generateGrid()

@@ -10,6 +10,9 @@ body {
     display: flex;
 }
 
+.space-between {
+    justify-content: space-between;
+}
 .container {
     justify-content: center;
     border: 9px #EBD7FA solid;
@@ -34,10 +37,6 @@ body {
     width: 4px;
 }
 
-.pixel:hover {
-    background-color: black;
-}
-
 .painted {
     background-color: black;
 }
@@ -47,17 +46,63 @@ body {
 }
 
 .button {
-    background-color: #EBD7FA;
+    background-color: #DAD7FA;
     border: none;
     color: white;
     font-weight: bold;
     font-size: large;
+    width: 4vw;
 }
 
 .button:hover {
-    background-color: #FAD7F8;
+    background-color: #D7F8FA;
 }
 
 .button:active {
-    background-color: #EBD7FA;
+    background-color: #DAD7FA;
+}
+
+.red {
+    color:red;
+    background-color: red;
+}
+
+.orange {
+    color: orange;
+    background-color: orange;
+}
+
+.yellow {
+    color: yellow;
+    background-color: yellow;
+}
+
+.green {
+    color: green;
+    background-color: green;
+}
+
+.blue {
+    color:blue;
+    background-color: blue;
+}
+
+.indigo {
+    color: indigo;
+    background-color: indigo;
+}
+
+.violet {
+    color: violet;
+    background-color: violet;
+}
+
+.black {
+    color: black;
+    background-color: black;
+}
+
+.white {
+    color: white;
+    background-color: white;
 }
